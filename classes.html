@@ -5,82 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Builds - Wakfu Compendium</title>
 
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="classes.css">
 </head>
 <body>
-    <h3>Elige tu clase</h3>
-    <div id="buildsB1">
-        <table>
-            <tr>
-                <td>
-                    <img onclick="selectOcra()" src="Icons/Ocra.webp" width="80" title="Builds Ocra">
-                </td>
-                <td>
-                    <img id="imgDisabled" src="Icons/Zurcarak.webp" width="80" title="No hay builds por ahora">
-                </td>
-                <td>
-                    <img onclick="selectSacrogrito()" src="Icons/Sacrogrito.webp" width="80" title="Builds Sacrogrito">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <img id="imgDisabled" src="Icons/Zobal.webp" width="80" title="No hay builds por ahora">
-                </td>
-                <td>
-                    <img id="imgDisabled" src="Icons/Sram.webp" width="80" title="No hay builds por ahora">
-                </td>
-                <td>
-                    <img onclick="selectUginak()" src="Icons/Uginak.webp" width="80" title="Builds Uginak">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <img onclick="selectYopuka()" src="Icons/Yopuka.webp" width="80" title="Builds Yopuka">
-                </td>
-                <td>
-                    <img onclick="selectAniripsa()" src="Icons/Aniripsa.webp" width="80" title="Builds Aniripsa">
-                </td>
-                <td>
-                    <img id="imgDisabled" src="Icons/Feca.webp" width="80" title="No hay builds por ahora">
-                </td>
-            </tr>
-            <tr>
-                
-                <td>
-                    <img id="imgDisabled" src="Icons/Sadida.webp" width="80" title="No hay builds por ahora">
-                </td>
-                <td>
-                    <img id="imgDisabled" src="Icons/Anutrof.webp" width="80" title="No hay builds por ahora">
-                </td>
-                <td>
-                    <img id="imgDisabled" src="Icons/Selotrop.webp" width="80" title="No hay builds por ahora">
-                </td>
-            </tr>
-            <tr>
-                
-                <td>
-                    <img id="imgDisabled" src="Icons/Steamer.webp" width="80" title="No hay builds por ahora">
-                </td>
-                <td>
-                    <img onclick="selectHipermago()" src="Icons/Hipermago.webp" width="80" title="Builds Hipermago" >
-                </td>
-                <td>
-                    <img id="imgDisabled" src="Icons/Xelor.webp" width="80" title="No hay builds por ahora">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <img id="imgDisabled" src="Icons/Osamodas.webp" width="80" title="No hay builds por ahora">
-                </td>
-                <td>
-                    <img id="imgDisabled" src="Icons/Pandawa.webp" width="80" title="No hay builds por ahora">
-                </td>
-                <td>
-                    <img id="imgDisabled" src="Icons/Tymador.webp" width="80" title="No hay builds por ahora">
-                </td>
-            </tr>
-        </table>
-    </div>
+    <header>
+        <h3>Elige tu clase</h3>
+    </header>
+    <main>
+        <div id="container">
+            <div class="area" id="characterSelect">
+                <img class="character" onclick="selectOcra()" src="Icons/Ocra.webp">
+                <img class="character" id="imgDisabled" onclick="selectZurcarak()" src="Icons/Zurcarak.webp">
+                <img class="character" onclick="selectSacrogrito()" src="Icons/Sacrogrito.webp">
+                <img class="character" id="imgDisabled" onclick="selectZobal()" src="Icons/Zobal.webp">
+                <img class="character" id="imgDisabled" onclick="selectSram()" src="Icons/Sram.webp">
+                <img class="character" onclick="selectUginak()" src="Icons/Uginak.webp">
+                <img class="character" onclick="selectYopuka()" src="Icons/Yopuka.webp">
+                <img class="character" onclick="selectAniripsa()" src="Icons/Aniripsa.webp">
+                <img class="character" id="imgDisabled" onclick="selectFeca()" src="Icons/Feca.webp">
+                <img class="character" id="imgDisabled" onclick="selectSadida()" src="Icons/Sadida.webp">
+                <img class="character" id="imgDisabled" onclick="selectAnutrof()" src="Icons/Anutrof.webp">
+                <img class="character" onclick="selectSelotrop()" src="Icons/Selotrop.webp">
+                <img class="character" id="imgDisabled" onclick="selectSteamer()" src="Icons/Steamer.webp">
+                <img class="character" onclick="selectHipermago()" src="Icons/Hipermago.webp">
+                <img class="character" id="imgDisabled" onclick="selectXelor()" src="Icons/Xelor.webp">
+                <img class="character" id="imgDisabled" onclick="selectOsamodas()" src="Icons/Osamodas.webp">
+                <img class="character" id="imgDisabled" onclick="selectPandawa()" src="Icons/Pandawa.webp">  
+                <img class="character" onclick="selectTymador()" src="Icons/Tymador.webp">   
+            </div>
+            <div class="area" id="characterDisplay">Display</div>
+            <div class="area" id="characterInfo">Info</div>
+        </div>
+    </main>
+    <footer></footer>
+
     <div id="buildsB2">
         fsdfdsf
     </div>
@@ -104,8 +62,14 @@
         function selectAniripsa(){
             changeClassTable("Aniripsa seleccionado");
         }
+        function selectSelotrop(){
+            changeClassTable("Selotrop seleccionado");
+        }
         function selectHipermago(){
             changeClassTable("Hipermago seleccionado");
+        }
+        function selectTymador(){
+            changeClassTable("Tymador seleccionado")
         }
 
     </script>
