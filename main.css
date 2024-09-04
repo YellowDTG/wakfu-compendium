@@ -1,0 +1,138 @@
+*{
+    /* When calculating width and height, factore in the padding */
+    box-sizing: border-box;
+}
+/* Body CSS*/
+body{
+    margin: 0;
+}
+
+/* Main CSS */
+main{
+    /* border: 2px solid red; */
+    width: 100vw;
+    height: 75vh;
+    min-height: 74vh;
+    background-color: darkcyan;
+}
+main a{
+    text-decoration: none;
+    color: white;
+}
+.mainArea{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    text-align: center;
+    background-color: darkcyan;
+
+    min-height: 75vh;
+    max-width: 800px;
+    overflow: visible;
+
+    text-shadow: 3px 1.5px 2px black;
+    border: 1px solid;
+}
+.mainBox{
+    width: 48.8%;
+    height: 48.8%;
+    float:left;
+
+    font-size: 3em;
+    text-align: center;
+    align-content: center;
+
+    background-attachment: local;
+    background-size:cover;
+
+    transition: .2s ease-in-out 0s;
+    border: 5px solid cyan;
+}
+/* BOX 1 */
+#box1{
+    margin-left: 0.8%;
+    margin-right: 0.4%;
+    margin-top: 0.8%;
+    margin-bottom: 0.4%;
+    
+    background-color: hsl(31, 100%, 62%);
+    background-image: url("Wakfu Backgrounds/BuildsBG.jpg");
+}
+#box1:hover{
+    background-color: hsl(31, 100%, 72%);
+    cursor: pointer;
+    transform: scale(0.98);
+}
+/* BOX 2 */
+#box2{
+    margin-left: 0.4%;
+    margin-right: 0.8%;
+    margin-top: 0.8%;
+    margin-bottom: 0.4%;
+
+    background-color: hsl(56, 100%, 62%);
+    background-image: url("Wakfu Backgrounds/Amiga.jpg");
+}
+#box2:hover{
+    background-color: hsl(56, 100%, 72%);
+    cursor: pointer;
+    transform: scale(0.98);
+}
+/* BOX 3 */
+#box3{
+    margin-left: 0.8%;
+    margin-right: 0.4%;
+    margin-top: 0.4%;
+    margin-bottom: 0.8%;
+
+    background-color: hsl(70, 100%, 62%);
+    background-image: url("Wakfu Backgrounds/Hipermago.jpg");
+}
+#box3:hover{
+    background-color: hsl(70, 100%, 72%);
+    cursor: pointer;
+    transform: scale(0.98);
+}
+/* BOX 4 */
+#box4{
+    margin-left: 0.4%;
+    margin-right: 0.8%;
+    margin-top: 0.4%;
+    margin-bottom: 0.8%;
+
+    background-color: hsl(100, 100%, 62%);
+    background-image: url("Wakfu Backgrounds/Aniripsa.jpg");
+}
+#box4:hover{
+    background-color: hsl(100, 100%, 72%);
+    cursor: pointer;
+    transform: scale(0.98);
+}
+
+/* Builds CSS */
+#imgDisabled{
+    opacity: 0.55;
+    background-color: black;
+}
+
+@keyframes scaleReset{
+    to{transform: scale(1em);}
+}
+@keyframes scaleDown{
+    to{transform: scale(0.98);}
+}
+
+@media screen and (max-width:650px){
+    main{
+        width: auto;
+        height: auto;
+    }
+    .mainBox{
+        float: none;
+        width: 100%;
+        height: 150px;
+    }
+    header{
+        font-size: 0.8em ;
+    }
+}
