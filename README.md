@@ -1,6 +1,6 @@
 # wakfu-compendium
 
-Esta es una página web que he creado para practicar HTML, CSS Y JavaScript según voy aprendiendo.
+Esta es una página web que he creado para practicar HTML, CSS Y JavaScript según voy aprendiendo. (Empecé exactamente el 1 de septiembre).
 
 Nos encanta Wakfu y queriamos tener un sitio donde tener organizados todas nuestras builds y también más adelante hacer guías actualizadas de las misiones, porque las que hay en internet o son muy largas o muy viejas y no valen ya.
 
