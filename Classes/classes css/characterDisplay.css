@@ -1,0 +1,45 @@
+/* CHARACTER DISPLAY CSS */
+#characterIllustration{
+    width: 40vw;
+}
+#characterIllust{
+    opacity: 0;
+    display: block;
+    max-height: 80%;
+    max-width: 100%;
+
+    position: relative;
+    top: 10%;
+    margin: auto;
+}
+#characterBG{
+    opacity: 0;
+    display: block;
+    max-height: 80%;
+    max-width: 80%;
+
+    position: relative;
+    bottom: 25%;
+    margin: auto;
+}
+img.displayImg{
+    animation-name: fadeIn;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+}
+img.displayBG{
+    animation-name: TransitionIn;
+    animation-duration: 1.0s;
+    animation-fill-mode: forwards;
+}
+img.hideImg{
+    opacity: 0;
+}
+@keyframes fadeIn{
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+@keyframes TransitionIn{
+    from {opacity: 0; transform: translateY(200px);}
+    to {opacity: 1;}
+}

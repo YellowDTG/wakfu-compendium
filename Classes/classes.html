@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Builds - Wakfu Compendium</title>
+
+    <link rel="stylesheet" href="classes.css">
+    <link rel="stylesheet" href="classes css/characterSelection.css">
+    <link rel="stylesheet" href="classes css/characterDisplay.css">
+    <link rel="stylesheet" href="classes css/characterInfo.css">
+</head>
+<body>
+    <header>
+        <h3>Elige tu clase</h3>
+    </header>
+    <main>
+        <div id="container">
+            <div class="area" id="characterPortraits">
+                <div>
+                    <button onclick="changeGender('male')">
+                        MALE
+                    </button>
+                    <button onclick="changeGender('female')">
+                        FEMALE
+                    </button>
+                </div>
+                <div>
+                <img src="characterPortraits/aleat.png" class="character" onclick="selectClass('Ocra')">
+                <img src="characterPortraits/aleat.png" class="character" onclick="selectClass('Zurcarak')">
+                <img src="characterPortraits/aleat.png" class="character" onclick="selectClass('Sacro')">
+                <img src="characterPortraits/aleat.png" class="character" onclick="selectClass('Zobal')">
+                <img src="characterPortraits/aleat.png" class="character" onclick="selectClass('Sram')">
+                <img src="characterPortraits/aleat.png" class="character" onclick="selectClass('Uginak')">
+                <img src="characterPortraits/aleat.png" class="character" onclick="selectClass('Yopuka')">
+                <img src="characterPortraits/aleat.png" class="character" onclick="selectClass('Aniripsa')">
+                <img src="characterPortraits/aleat.png" class="character" onclick="selectClass('Feca')">
+                <img src="characterPortraits/aleat.png" class="character" onclick="selectClass('Sadida')">
+                <img src="characterPortraits/aleat.png" class="character" onclick="selectClass('Anutrof')">
+                <img src="characterPortraits/aleat.png" class="character" onclick="selectClass('Selotrop')">
+                <img src="characterPortraits/aleat.png" class="character" onclick="selectClass('Steamer')">
+                <img src="characterPortraits/aleat.png" class="character" onclick="selectClass('Hipermago')">
+                <img src="characterPortraits/aleat.png" class="character" onclick="selectClass('Xelor')">
+                <img src="characterPortraits/aleat.png" class="character" onclick="selectClass('Osamodas')">
+                <img src="characterPortraits/aleat.png" class="character" onclick="selectClass('Pandawa')">  
+                <img src="characterPortraits/aleat.png" class="character" onclick="selectClass('Tymador')">   
+                </div>
+            </div>
+            <div class="area" id="characterIllustration">
+                <img id="characterIllust" src="">
+                <img id="characterBG" src="characterBackgrounds/10bg.png">
+            </div>
+            <div class="area" id="characterInfo">
+                <div id="classTitleSection" style="display: none;">
+                    <img id="classIcon" src="characterPortraits/aleat.png">
+                    <div id="classTitle">
+                        <p id="justTitle">Class Title</p>
+                        <div id="classDifficulty">
+                            Difficulty:
+                            <img id="difficultyImg" src="characterPortraits/aleat.png">
+                        </div>
+                    </div>
+                </div>
+                <!-- ------ CLASS INFORMATION SECTION ----- -->
+                <div id="classInfoSection" style="display: none;">
+                    <p id="classDescription">PROBANDO PROBANDO</p>
+                    <div id="classCategories">
+                        <div>
+                            <img id="categoryImg" src="characterPortraits/aleat.png">
+                            <p id="categoryTxt">Pachapau</p>
+                        </div>
+                        <div>
+                            <img id="categoryImg" src="characterPortraits/aleat.png">
+                            <p id="categoryTxt">Pachapau</p>
+                        </div>
+                        <div>
+                            <img id="categoryImg" src="characterPortraits/aleat.png">
+                            <p id="categoryTxt">Pachapau</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ------- BUILDS SECTION ------- -->
+                <div id="classBuildsSection" style="display: none;">
+                    <div id="buildsSection1">
+                        <p id="buildTitle">Builds Sacrógrito</p>
+                        <p id="typeOfBuild">Tipo de Build: "Tanque"</p>
+                    </div>
+                    <div id="buildsSection2">
+                        <button class="buildBtn" id="viewBuildsBtn">Ver Builds</button>
+                        <button class="buildBtn" id="viewDescBtn">Descripcion</button>
+                        <button class="buildBtn" id="changeBuildBtn">Cambiar Build</button>
+                    </div>
+                    <div id="buildsTable">
+                        <div class="buildBlock">
+                            <p id="buildName">Nivel 20 (F)</p>
+                            <a href="https://zenithwakfu.com/builder/c3e5d" target="_blank">
+                                <img id="buildImg" src="/Wakfu-Compendium/Classes/characterPortraits/aleat.png">
+                            </a>
+                        </div>
+                        <div class="buildBlock">
+                            <p id="buildName">Nivel 35 (F)</p>
+                            <a href="https://zenithwakfu.com/builder/ff4a0" target="_blank">
+                                <img id="buildImg" src="/Wakfu-Compendium/Classes/characterPortraits/aleat.png">
+                            </a>
+                        </div>
+                        <div class="buildBlock">
+                            <p id="buildName">Nivel 50 (F)</p>
+                            <a href="https://zenithwakfu.com/builder/b000d" target="_blank">
+                                <img id="buildImg" src="/Wakfu-Compendium/Classes/characterPortraits/aleat.png">
+                            </a>
+                        </div>
+                        <div class="buildBlock">
+                            <p id="buildName">Nivel 65 (F)</p>
+                            <a href="https://zenithwakfu.com/builder/b8f65" target="_blank">
+                                <img id="buildImg" src="/Wakfu-Compendium/Classes/characterPortraits/aleat.png">
+                            </a>
+                        </div>
+                        <div class="buildBlock">
+                            <p id="buildName">Nivel 80 (F)</p>
+                            <a href="https://zenithwakfu.com/builder/3ff84" target="_blank">
+                                <img id="buildImg" src="/Wakfu-Compendium/Classes/characterPortraits/aleat.png">
+                            </a>
+                        </div>
+                        <div class="buildBlock">
+                            <p id="buildName">Nivel 95 (F)</p>
+                            <a href="https://zenithwakfu.com/builder/b57f6" target="_blank">
+                                <img id="buildImg" src="/Wakfu-Compendium/Classes/characterPortraits/aleat.png">
+                            </a>
+                        </div>
+                        <div class="buildBlock">
+                            <p id="buildName">Nivel 110 (F)</p>
+                            <a href="https://zenithwakfu.com/builder/b57f6" target="_blank">
+                                <img id="buildImg" src="/Wakfu-Compendium/Classes/characterPortraits/aleat.png">
+                            </a>
+                        </div>
+                        <div class="buildBlock">
+                            <p id="buildName">Nivel 125 (F)</p>
+                            <a href="https://zenithwakfu.com/builder/b57f6" target="_blank">
+                                <img id="buildImg" src="/Wakfu-Compendium/Classes/characterPortraits/aleat.png">
+                            </a>
+                        </div>
+                        <div class="buildBlock">
+                            <p id="buildName">Nivel 140 (F)</p>
+                            <a href="https://zenithwakfu.com/builder/b57f6" target="_blank">
+                                <img id="buildImg" src="/Wakfu-Compendium/Classes/characterPortraits/aleat.png">
+                            </a>
+                        </div>
+                        <div class="buildBlock">
+                            <p id="buildName">Nivel 155 (F)</p>
+                            <a href="https://zenithwakfu.com/builder/b57f6" target="_blank">
+                                <img id="buildImg" src="/Wakfu-Compendium/Classes/characterPortraits/aleat.png">
+                            </a>
+                        </div>
+                        <div class="buildBlock">
+                            <p id="buildName">Nivel 170 (F)</p>
+                            <a href="https://zenithwakfu.com/builder/b57f6" target="_blank">
+                                <img id="buildImg" src="/Wakfu-Compendium/Classes/characterPortraits/aleat.png">
+                            </a>
+                        </div>
+                        <div class="buildBlock">
+                            <p id="buildName">Nivel 185 (F)</p>
+                            <a href="https://zenithwakfu.com/builder/b57f6" target="_blank">
+                                <img id="buildImg" src="/Wakfu-Compendium/Classes/characterPortraits/aleat.png">
+                            </a>
+                        </div>
+                        <div class="buildBlock">
+                            <p id="buildName">Nivel 200 (F)</p>
+                            <a href="https://zenithwakfu.com/builder/b57f6" target="_blank">
+                                <img id="buildImg" src="/Wakfu-Compendium/Classes/characterPortraits/aleat.png">
+                            </a>
+                        </div>
+                        <div class="buildBlock">
+                            <p id="buildName">Nivel 215 (F)</p>
+                            <a href="https://zenithwakfu.com/builder/b57f6" target="_blank">
+                                <img id="buildImg" src="/Wakfu-Compendium/Classes/characterPortraits/aleat.png">
+                            </a>
+                        </div>
+                        <div class="buildBlock">
+                            <p id="buildName">Nivel 230 (F)</p>
+                            <a href="https://zenithwakfu.com/builder/b57f6" target="_blank">
+                                <img id="buildImg" src="/Wakfu-Compendium/Classes/characterPortraits/aleat.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div id="buildDescription" style="display: none;">
+                        <p>Whole as Description</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+
+    <div id="" style="display: flex; flex-direction: row;">
+        <p id="buildTitle"><b>&copy; Anthony Braun</b></p> 
+        <p id="typeOfBuild"><span style="font-size: 1rem;"><b>¡AVISO!</b></span> esta página está en progreso, si algo falta o no funciona, es porque no esta implementado todavía!!!</p>
+    </div>
+
+    <script src="classes.js"></script>
+</body>
+</html>

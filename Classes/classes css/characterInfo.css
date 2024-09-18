@@ -1,0 +1,160 @@
+/* CHARACTER INFO CSS */
+#characterInfo{
+    width: 25vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+/* CLASS TITLE SECTION */
+#classTitleSection{
+    border: 2px orange;
+    background-color: grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 15%;
+}
+#classIcon{
+    background-color: rgb(99, 99, 99);
+}
+#classTitle{
+    background-color: orange;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+#justTitle{
+    font-size: 1.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: bold;
+}
+#classDifficulty{
+    background-color: blue;
+    width: 100%;
+    height: 40%;
+}
+
+/* CLASS INFO SECTION */
+#classInfoSection{
+    background-color: cyan;
+    height: 250px;
+    display: flex;
+    overflow: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+#classDescription{
+    padding: 0 0;
+    width: 90%;
+    height: 50%;
+}
+#classCategories{
+    background-color: pink;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-bottom: 0px;
+}
+#categoryImg{
+    width: 60px;
+    padding-top: 10px;
+    text-align: center;
+}
+#categoryTxt{
+    padding: 0;
+    position: relative;
+    top: -10%;
+    text-align: center;
+}
+
+/* BUILDS SECTION */
+#classBuildsSection{
+    background-color: lightgreen;
+    border: 10px darkgreen;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 5px;
+}
+/* SECTION 1 */
+#buildsSection1{
+    background-color: aquamarine;
+    display: flex;
+    flex-direction: row;
+    height: 10%;
+
+}
+#buildTitle{
+    text-align: left;
+    width: 50%;
+    padding-left: 10px;
+}
+#typeOfBuild{
+    text-align: right;
+    width: 50%;
+    padding-right: 10px;
+}
+/* SECTION 2 */
+#buildsSection2{
+    background-color: blanchedalmond;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 25px;
+    height: 10%;
+}
+.buildBtn{
+    background-color: aqua;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 10px black;
+    width: 25%;
+    cursor: pointer;
+}
+#viewBuildsBtn{
+
+}
+#viewDescBtn{
+
+}
+#changeBuildBtn{
+
+}
+
+
+/* BUILDS SECTION */
+#buildsTable{
+    background-color: brown;
+    width: 100%;
+    height: 70%;
+
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    justify-content: center;
+    overflow: auto;
+}
+.buildBlock{
+    background-color: rgb(197, 148, 197);
+    width: 100%;
+    text-align: center;
+    border: 2px solid pink;
+}
+#buildTitle{
+
+}
+#buildImg{
+
+}
+
+/* BUILD DESC SECTION */
+
+

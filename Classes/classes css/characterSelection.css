@@ -1,0 +1,25 @@
+/* CHARACTER SELECTION CSS */
+#characterPortraits{
+    width: 260px;
+    height: auto;
+    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.character{
+    width: 80px;
+    padding: 1px;
+}
+.character:hover{
+    cursor: pointer;
+}
+#imgDisabled{
+    opacity: 0.55;
+}
