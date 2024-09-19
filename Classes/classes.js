@@ -19,10 +19,12 @@ const classCategoryTexts = document.querySelectorAll("#classCategories p");
 
 //Builds Section
 const classBuildsSection = document.getElementById("classBuildsSection");
+const buildsTable = document.getElementById("buildsTable");
 
 //Runtime variables
 const genders = ["male", "female"];
 
+let counter = 0;
 let currentGender = 0;
 let previousPortraitId = null;
 let portraitId = 0;
@@ -71,9 +73,9 @@ function displayClass(playAnimation){
     }
     characterIllust.src = `characterIllustrations/${portraitId + 1}${genders[currentGender]}.png`;
     characterBG.src = `characterBackgrounds/${portraitId + 1}bg.png`;
-
+    
     displayClassInfo();
-
+    
     if (playAnimation){
         setTimeout(() => characterIllust.classList.add("displayImg"),100);
         setTimeout(() => characterBG.classList.add("displayBG"),10);
@@ -109,7 +111,7 @@ function displayClassInfo(){
     }
 
     //INFO SECTION
-    let myDesc = currentCharacter.description.split('\n').join('\\n');
+    let myDesc = currentCharacter.description;
     console.log(myDesc);
     classDescription.textContent = myDesc;
 
@@ -145,8 +147,32 @@ function displayClassInfo(){
         }
     }
 
-    //BUILDS SECTION
-    // classBuildsSection.innerHTML = "";
+    // BUILDS SECTION
+
+    // BROKEN, INNER HTML ONLY WORKS ONCE, IF YOU CALL MULTIPLE TIMES IT BREAKS.
+    // if (counter > 0){
+    //     return;
+    // }
+    // counter++;
+
+    try{
+        buildsTable.innerHTML = "";
+        let currentBuild = currentCharacter.builds[0];
+        for (let i = 0; i < currentBuild.buildList.length; i++){
+            console.log(currentBuild.buildList[i].name);
+            buildsTable.innerHTML += `<div class="buildBlock">
+            <p id="buildName">${currentBuild.buildList[i].name}</p>
+            <a href='${currentBuild.buildList[i].url}' target="_blank">
+                <img id="buildImg" src="${currentBuild.buildList[i].img}">
+            </a>
+        </div>`;
+        }
+    }
+    catch(error){
+        console.log(error);
+        buildsTable.innerHTML += '<p style="text-align: center"><b>NO HAY BUILDS PARA ESTA CLASE TODAVÍA, CONTACTA AL DUEÑO POR DISCORD O ACHANTA Y ESPERA. skill issues</b></p>';
+    }
+
 }
 
 //CLASS METHODS

@@ -26,7 +26,35 @@
     "title": "La Sangre de Sacrógrito",
     "difficulty": 1,
     "description": "La abnegación y el espíritu de sacrificio del sacrógrito son un honor reservado a sus aliados. \n Los sacrógritos son unos berserkers cuya fuerza aumenta cuando reciben golpes. \n Ya que no temen las heridas, a menudo están en primera línea.",
-    "categories": ["Daños", "Tanque", "Posicionamiento"]
+    "categories": ["Daños", "Tanque", "Posicionamiento"],
+    "builds":[{
+        "type": "Daños/Berserker",
+        "description": "Esta build consiste en blablablabla, blablabla",
+        "buildList":[{
+            "name": "Nivel 20 (Dificil)",
+            "url": "https://zenithwakfu.com/builder/c3e5d",
+            "difficulty": 3,
+            "img": "characterPortraits/aleat.png"
+        },
+        {
+            "name": "Nivel 35 (Facil)",
+            "url": "https://zenithwakfu.com/builder/ff4a0",
+            "difficulty": 1,
+            "img": "characterPortraits/aleat.png"
+        },
+        {
+            "name": "Nivel 50 (Dificil)",
+            "url": "https://zenithwakfu.com/builder/b000d",
+            "difficulty": 3,
+            "img": "characterPortraits/aleat.png"
+        },
+        {
+            "name": "Nivel 65 (Normal)",
+            "url": "https://zenithwakfu.com/builder/b8f65",
+            "difficulty": 2,
+            "img": "characterPortraits/aleat.png"
+        }]
+    }]
 },
 {
     "portraitUrl": "",
@@ -46,7 +74,41 @@
     "title": "La Sombra de Sram",
     "difficulty": 1,
     "description": "Sram ha domado la sombra y el mundo invisible es ahora su aliado. \n Los srams son asesinos a los que les encantan las bolsas y más aún cuando son muy pesadas.",
-    "categories": ["Especialidad", "Daños", "Traba"]
+    "categories": ["Especialidad", "Daños", "Traba"],
+    "builds":[{
+        "type": "Daños/Espalda",
+        "description": "Esta build consiste en blablablabla, blablabla",
+        "buildList":[{
+            "name": "Nivel 20 (Normal)",
+            "url": "https://zenithwakfu.com/builder/0611d",
+            "difficulty": 2,
+            "img": "characterPortraits/aleat.png"
+        },
+        {
+            "name": "Nivel 35 (Facil)",
+            "url": "https://zenithwakfu.com/builder/5ce6a",
+            "difficulty": 1,
+            "img": "characterPortraits/aleat.png"
+        },
+        {
+            "name": "Nivel 50 (Dificil)",
+            "url": "https://zenithwakfu.com/builder/4a7fa",
+            "difficulty": 3,
+            "img": "characterPortraits/aleat.png"
+        },
+        {
+            "name": "Nivel 50 v2 (Dificil)",
+            "url": "https://zenithwakfu.com/builder/cbc0c",
+            "difficulty": 3,
+            "img": "characterPortraits/aleat.png"
+        },
+        {
+            "name": "Nivel 65 (Normal)",
+            "url": "https://zenithwakfu.com/builder/46c6d",
+            "difficulty": 2,
+            "img": "characterPortraits/aleat.png"
+        }]
+    }]
 },
 {
     "portraitUrl": "",
@@ -56,7 +118,29 @@
     "title": "La rabia de Uginak",
     "difficulty": 1,
     "description": "Los uginaks son guerreros que persiguen a sus presas sin darles cuartel. Ágiles y resistentes, no dudan en saltar sobre todo lo que se mueva. Jugador o monstruo? ¡No hay distinción!",
-    "categories": ["Daños", "Tanque", "Control"]
+    "categories": ["Daños", "Tanque", "Control"],
+    "builds":[{
+        "type": "Daños/Tanque",
+        "description": "Esta build consiste en blablablabla, blablabla",
+        "buildList":[{
+            "name": "Nivel 20 (Dificil)",
+            "url": "https://zenithwakfu.com/builder/50bc9",
+            "difficulty": 3,
+            "img": "characterPortraits/aleat.png"
+        },
+        {
+            "name": "Nivel 35 (Facil)",
+            "url": "https://zenithwakfu.com/builder/95c96",
+            "difficulty": 1,
+            "img": "characterPortraits/aleat.png"
+        },
+        {
+            "name": "Nivel 50 (Normal)",
+            "url": "https://zenithwakfu.com/builder/ef6be",
+            "difficulty": 2,
+            "img": "characterPortraits/aleat.png"
+        }]
+    }]
 },
 {
     "portraitUrl": "",
@@ -76,7 +160,47 @@
     "title": "Las Manos de Aniripsa",
     "difficulty": 2,
     "description": "Cada segundo, el conocimiento sanador de los aniripsas salva una vida.\nLos aniripsas son curanderos que sanan con una simple palabra. Las utilizan sobre todo para curar a sus aliados pero a veces también para herir a sus enemigos.",
-    "categories": ["Especialidad", "Curas", "Apoyo"]
+    "categories": ["Especialidad", "Curas", "Apoyo"],
+    "builds":[{
+        "type": "Daños/Curas",
+        "description": "Esta build consiste en blablablabla, blablabla",
+        "buildList":[{
+            "name": "Nivel 20 (Dificil)",
+            "url": "https://zenithwakfu.com/builder/50bc9",
+            "difficulty": 3,
+            "img": "characterPortraits/aleat.png"
+        },
+        {
+            "name": "Nivel 35 (Facil)",
+            "url": "https://zenithwakfu.com/builder/95c96",
+            "difficulty": 1,
+            "img": "characterPortraits/aleat.png"
+        },
+        {
+            "name": "Nivel 50 (Normal)",
+            "url": "https://zenithwakfu.com/builder/ef6be",
+            "difficulty": 2,
+            "img": "characterPortraits/aleat.png"
+        },
+        {
+            "name": "Nivel 50 (Imposible)",
+            "url": "https://zenithwakfu.com/builder/4f81b",
+            "difficulty": 4,
+            "img": "characterPortraits/aleat.png"
+        },
+        {
+            "name": "Nivel 65 (Normal)",
+            "url": "https://zenithwakfu.com/builder/cf0b9",
+            "difficulty": 2,
+            "img": "characterPortraits/aleat.png"
+        },
+        {
+            "name": "Nivel 80 (Imposible)",
+            "url": "https://zenithwakfu.com/builder/c3772",
+            "difficulty": 4,
+            "img": "characterPortraits/aleat.png"
+        }]
+    }]
 },
 {
     "portraitUrl": "",
@@ -116,7 +240,29 @@
     "title": "El portal de Selotrop",
     "difficulty": 2,
     "description": "Aparecidos por accidente, los selotropes son el reflejo de su creador, el Rey Dios.\nSe desplazan a la velocidad del rayo, desaparecen en un abrir y cerrar de ojos y vuelven a aparecer en otro sitio. Al igual que los selatropes, conocen los secretos del Wakfu.",
-    "categories": ["Posicionamiento", "Control", "Daños"]
+    "categories": ["Posicionamiento", "Control", "Daños"],
+    "builds":[{
+        "type": "Daños/Distancia",
+        "description": "Esta build consiste en blablablabla, blablabla",
+        "buildList":[{
+            "name": "Nivel 20 (Dificil)",
+            "url": "https://zenithwakfu.com/builder/55b57",
+            "difficulty": 3,
+            "img": "characterPortraits/aleat.png"
+        },
+        {
+            "name": "Nivel 35 (Normal)",
+            "url": "https://zenithwakfu.com/builder/46bfd",
+            "difficulty": 2,
+            "img": "characterPortraits/aleat.png"
+        },
+        {
+            "name": "Nivel 50 (Facil)",
+            "url": "https://zenithwakfu.com/builder/e51a3",
+            "difficulty": 1,
+            "img": "characterPortraits/aleat.png"
+        }]
+    }]
 },
 {
     "portraitUrl": "",
@@ -166,7 +312,17 @@
     "title": "La Jarrita de Pandawa",
     "difficulty": 3,
     "description": "Pandawa usa bebidas fermentadas de las que saca fuerza y filosofía.\nLos pandawas son guerreros porteadores que pueden hacer locuras con sus cuerpos. Incluso podrán hacer locuras con el cuerpo de otros...",
-    "categories": ["Posicionamiento", "Tanque", "Curas"]
+    "categories": ["Posicionamiento", "Tanque", "Curas"],
+    "builds":[{
+        "type": "Tanque/Curas/Posicionamiento",
+        "description": "Esta build consiste en blablablabla, blablabla",
+        "buildList":[{
+            "name": "Nivel 20 (Dificil)",
+            "url": "https://zenithwakfu.com/builder/d2d96",
+            "difficulty": 3,
+            "img": "characterPortraits/aleat.png"
+        }]
+    }]
 },
 {
     "portraitUrl": "",
