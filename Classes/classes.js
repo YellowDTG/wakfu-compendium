@@ -160,12 +160,40 @@ function displayClassInfo(){
         let currentBuild = currentCharacter.builds[0];
         for (let i = 0; i < currentBuild.buildList.length; i++){
             console.log(currentBuild.buildList[i].name);
-            buildsTable.innerHTML += `<div class="buildBlock">
-            <p id="buildName">${currentBuild.buildList[i].name}</p>
-            <a href='${currentBuild.buildList[i].url}' target="_blank">
-                <img id="buildImg" src="${currentBuild.buildList[i].img}">
-            </a>
-        </div>`;
+
+            const newDiv = document.createElement("div");
+            newDiv.classList.add("buildBlock");
+
+            const newP = document.createElement("p");
+            //TWO WAYS OF ADDING ID
+            //set attribute for any attribute.
+            // newP.setAttribute("id", "buildName");
+
+            //simple way
+            newP.id = "buildName";
+            newP.textContent = currentBuild.buildList[i].name;
+
+            const newA = document.createElement("a");
+            newA.setAttribute("href", currentBuild.buildList[i].url);
+            newA.setAttribute("target", "_blank");
+
+            const newImg = document.createElement("img");
+            newImg.setAttribute("src", currentBuild.buildList[i].img);
+
+            buildsTable.appendChild(newDiv);
+            newDiv.appendChild(newP);
+            newDiv.appendChild(newA);
+            newA.appendChild(newImg);
+
+
+        //INNER HTML METHOD. 
+        //WORKS ON LIVE SERVER FINE, BUT FOR SOME REASON DOESN'T WORK ON AN ACTUAL WEBSITE.
+        //     buildsTable.innerHTML += `<div class="buildBlock">
+        //     <p id="buildName">${currentBuild.buildList[i].name}</p>
+        //     <a href='${currentBuild.buildList[i].url}' target="_blank">
+        //         <img id="buildImg" src="${currentBuild.buildList[i].img}">
+        //     </a>
+        // </div>`;
         }
     }
     catch(error){
