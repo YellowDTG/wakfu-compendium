@@ -292,7 +292,17 @@
     "title": "El Reloj de arena de Xelor",
     "difficulty": 3,
     "description": "Xelor altera el tiempo para utilizarlo a su antojo.\nLos xelors son magos que controlan el tiempo y el espacio, con el fin de aumentar su propio potencial o el de sus aliados, reduciendo al mismo tiempo el de sus enemigos.",
-    "categories": ["Daños", "Traba", "Posicionamiento"]
+    "categories": ["Daños", "Traba", "Posicionamiento"],
+    "builds":[{
+        "type": "Daños/Distancia",
+        "description": "Esta build consiste en blablablabla, blablabla",
+        "buildList":[{
+            "name": "Nivel 20 (Dificil)",
+            "url": "https://zenithwakfu.com/builder/84256",
+            "difficulty": 3,
+            "img": "characterPortraits/aleat.png"
+        }]
+    }]
 },
 {
     "portraitUrl": "",
@@ -319,6 +329,18 @@
         "buildList":[{
             "name": "Nivel 20 (Dificil)",
             "url": "https://zenithwakfu.com/builder/d2d96",
+            "difficulty": 3,
+            "img": "characterPortraits/aleat.png"
+        },
+        {
+            "name": "Nivel 35 (Normal)",
+            "url": "https://zenithwakfu.com/builder/c4dbb",
+            "difficulty": 2,
+            "img": "characterPortraits/aleat.png"
+        },
+        {
+            "name": "Nivel 50 (Dificil)",
+            "url": "https://zenithwakfu.com/builder/4cbaf",
             "difficulty": 3,
             "img": "characterPortraits/aleat.png"
         }]

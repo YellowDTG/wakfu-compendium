@@ -164,26 +164,28 @@ function displayClassInfo(){
             const newDiv = document.createElement("div");
             newDiv.classList.add("buildBlock");
 
-            const newP = document.createElement("p");
-            //TWO WAYS OF ADDING ID
-            //set attribute for any attribute.
-            // newP.setAttribute("id", "buildName");
+            const newA1 = document.createElement("a");
+            newA1.setAttribute("href", currentBuild.buildList[i].url);
+            newA1.setAttribute("target", "_blank");
 
-            //simple way
+            const newP = document.createElement("p");
+            //TWO WAYS OF ADDING ID element.id = "" || element.setAttribute("id", "");
             newP.id = "buildName";
             newP.textContent = currentBuild.buildList[i].name;
 
-            const newA = document.createElement("a");
-            newA.setAttribute("href", currentBuild.buildList[i].url);
-            newA.setAttribute("target", "_blank");
+            const newA2 = document.createElement("a");
+            newA2.setAttribute("href", currentBuild.buildList[i].url);
+            newA2.setAttribute("target", "_blank");
 
             const newImg = document.createElement("img");
             newImg.setAttribute("src", currentBuild.buildList[i].img);
 
             buildsTable.appendChild(newDiv);
-            newDiv.appendChild(newP);
-            newDiv.appendChild(newA);
-            newA.appendChild(newImg);
+                newDiv.appendChild(newA1);
+                    newA1.appendChild(newP);
+
+                newDiv.appendChild(newA2);
+                    newA2.appendChild(newImg);
 
 
         //INNER HTML METHOD. 
