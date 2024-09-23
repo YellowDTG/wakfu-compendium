@@ -3,6 +3,7 @@
     "IllustUrl": "",
     "classIconUrl": "",
     "id": 1,
+    "name": "Ocra",
     "title": "El Alcance de Ocra",
     "difficulty": 1,
     "description": "El ojo avizor de Ocra inspira respeto incluso a sus enemigos. \n Cabellos al viento, silueta esbelta: el discípulo ocra es un magnífico arquero, de eso no cabe duda. Son aliados de gran valor contra los adeptos de la melé.",
@@ -13,6 +14,7 @@
     "IllustUrl": "",
     "classIconUrl": "",
     "id": 2,
+    "name": "Zurcarák",
     "title": "La Moneda de Zurcarák",
     "difficulty": 1,
     "description": "Zurcarák vive del amor al juego. Para él, cada día es otra oportunidad que brinda la suerte. \n Los zurcaráks son guerreros jugadores que se juegan la vida en una partida de dados para ganar un combate.",
@@ -23,6 +25,7 @@
     "IllustUrl": "",
     "classIconUrl": "",
     "id": 3,
+    "name": "Sacrógrito",
     "title": "La Sangre de Sacrógrito",
     "difficulty": 1,
     "description": "La abnegación y el espíritu de sacrificio del sacrógrito son un honor reservado a sus aliados. \n Los sacrógritos son unos berserkers cuya fuerza aumenta cuando reciben golpes. \n Ya que no temen las heridas, a menudo están en primera línea.",
@@ -61,6 +64,7 @@
     "IllustUrl": "",
     "classIconUrl": "",
     "id": 4,
+    "name": "Zobal",
     "title": "El Zobal",
     "difficulty": 1,
     "description": "Los zobals son guerreros lunáticos que se adaptan a todo tipo de situaciones. A veces temerosos, otras psicópatas y, a menudo, simplemente zobals: sus capacidades en combate cambian según la máscara que se pongan.",
@@ -71,6 +75,7 @@
     "IllustUrl": "",
     "classIconUrl": "",
     "id": 5,
+    "name": "Sram",
     "title": "La Sombra de Sram",
     "difficulty": 1,
     "description": "Sram ha domado la sombra y el mundo invisible es ahora su aliado. \n Los srams son asesinos a los que les encantan las bolsas y más aún cuando son muy pesadas.",
@@ -115,6 +120,7 @@
     "IllustUrl": "",
     "classIconUrl": "",
     "id": 6,
+    "name": "Uginak",
     "title": "La rabia de Uginak",
     "difficulty": 1,
     "description": "Los uginaks son guerreros que persiguen a sus presas sin darles cuartel. Ágiles y resistentes, no dudan en saltar sobre todo lo que se mueva. Jugador o monstruo? ¡No hay distinción!",
@@ -147,6 +153,7 @@
     "IllustUrl": "",
     "classIconUrl": "",
     "id": 7,
+    "name": "Yopuka",
     "title": "El Corazón de Yopuka",
     "difficulty": 2,
     "description": "Yopuka blande coraje y valentía como si fuesen armas rutilantes.\nLos yopukas son guerreros intrépidos y temerarios. Lo cierto es que los yopukas saben hacer hablar a sus armas.",
@@ -157,12 +164,13 @@
     "IllustUrl": "",
     "classIconUrl": "",
     "id": 8,
+    "name": "Aniripsa",
     "title": "Las Manos de Aniripsa",
     "difficulty": 2,
     "description": "Cada segundo, el conocimiento sanador de los aniripsas salva una vida.\nLos aniripsas son curanderos que sanan con una simple palabra. Las utilizan sobre todo para curar a sus aliados pero a veces también para herir a sus enemigos.",
     "categories": ["Especialidad", "Curas", "Apoyo"],
     "builds":[{
-        "type": "Daños/Curas",
+        "type": "Daños/Distancia",
         "description": "Esta build consiste en blablablabla, blablabla",
         "buildList":[{
             "name": "Nivel 20 (Dificil)",
@@ -200,6 +208,16 @@
             "difficulty": 4,
             "img": "characterPortraits/aleat.png"
         }]
+    },
+    {
+        "type": "Daños/Melé",
+        "description": "Esta build consiste en blablablabla, blablabla",
+        "buildList":[{
+            "name": "Nivel 20 (Dificil)",
+            "url": "https://zenithwakfu.com/builder/50bc9",
+            "difficulty": 3,
+            "img": "characterPortraits/aleat.png"
+        }]
     }]
 },
 {
@@ -207,6 +225,7 @@
     "IllustUrl": "",
     "classIconUrl": "",
     "id": 9,
+    "name": "Feca",
     "title": "El Escudo de Feca",
     "difficulty": 2,
     "description": "Los fecas, protectores natos, han elevado su magia a la categoría de arte y ciencia.\nSu escudo forma parte de ellos mismos hasta tal punto que muchos piensan ¡que tiene vida propia!",
@@ -217,16 +236,28 @@
     "IllustUrl": "",
     "classIconUrl": "",
     "id": 10,
+    "name": "Sadida",
     "title": "El Zapato de Sadida",
     "difficulty": 2,
     "description": "Sadida utiliza los vegetales para dar vida a muñecas de guerra.\nLos sadidas son invocadores que fabrican ungüentos y temibles venenos.",
-    "categories": ["Invocación", "Apoyo", "Curas"]
+    "categories": ["Invocación", "Apoyo", "Curas"],
+    "builds":[{
+        "type": "Polivalente/Distancia",
+        "description": "Esta build consiste en blablablabla, blablabla",
+        "buildList":[{
+            "name": "Nivel 20 (Dificil)",
+            "url": "https://zenithwakfu.com/builder/96c6f",
+            "difficulty": 3,
+            "img": "characterPortraits/aleat.png"
+        }]
+    }]
 },
 {
     "portraitUrl": "",
     "IllustUrl": "",
     "classIconUrl": "",
     "id": 11,
+    "name": "Anutrof",
     "title": "Los Dedos de Anutrof",
     "difficulty": 2,
     "description": "Anutrof obtiene gloria y poder de los tesoros que amasa.\nLos anutrofs son unos impenitentes cazadores de tesoros. Cualquier producto, objeto o criatura les interesa siempre y cuando puedan conseguir kamas a cambio.",
@@ -237,6 +268,7 @@
     "IllustUrl": "",
     "classIconUrl": "",
     "id": 12,
+    "name": "Selotrop",
     "title": "El portal de Selotrop",
     "difficulty": 2,
     "description": "Aparecidos por accidente, los selotropes son el reflejo de su creador, el Rey Dios.\nSe desplazan a la velocidad del rayo, desaparecen en un abrir y cerrar de ojos y vuelven a aparecer en otro sitio. Al igual que los selatropes, conocen los secretos del Wakfu.",
@@ -269,6 +301,7 @@
     "IllustUrl": "",
     "classIconUrl": "",
     "id": 13,
+    "name": "Steamer",
     "title": "El Steamer",
     "difficulty": 3,
     "description": "Los steamers son seres con la apariencia de máquinas y cuyo origen proviene del antiguo pueblo sufokeño.\nFuncionan a base de Statis y manipulan esta extraña energía para efectuar ataques destructivos a distancia.",
@@ -279,6 +312,7 @@
     "IllustUrl": "",
     "classIconUrl": "",
     "id": 14,
+    "name": "Hipermago",
     "title": "La runa del Hipermago",
     "difficulty": 3,
     "description": "Los hipermagos son maestros de las runas elementales que combinan agua, fuego, aire y tierra para crear hechizos de un poder impresionante. Su sed de conocimiento los lleva a estudiar sin descando las formas de restablecer el equilibrio de la Balanza Krósmica.",
@@ -289,6 +323,7 @@
     "IllustUrl": "",
     "classIconUrl": "",
     "id": 15,
+    "name": "Xelor",
     "title": "El Reloj de arena de Xelor",
     "difficulty": 3,
     "description": "Xelor altera el tiempo para utilizarlo a su antojo.\nLos xelors son magos que controlan el tiempo y el espacio, con el fin de aumentar su propio potencial o el de sus aliados, reduciendo al mismo tiempo el de sus enemigos.",
@@ -301,6 +336,12 @@
             "url": "https://zenithwakfu.com/builder/84256",
             "difficulty": 3,
             "img": "characterPortraits/aleat.png"
+        },
+        {
+            "name": "Nivel 35 (Normal)",
+            "url": "https://zenithwakfu.com/builder/e7262",
+            "difficulty": 2,
+            "img": "characterPortraits/aleat.png"
         }]
     }]
 },
@@ -309,6 +350,7 @@
     "IllustUrl": "",
     "classIconUrl": "",
     "id": 16,
+    "name": "Osamodas",
     "title": "El Látigo de Osamodas",
     "difficulty": 3,
     "description": "¡Los osamodas son invocadores natos!\nTienen el poder de invocar criatuas y resultan ser excenlentes domadores.",
@@ -319,12 +361,13 @@
     "IllustUrl": "",
     "classIconUrl": "",
     "id": 17,
+    "name": "Pandawa",
     "title": "La Jarrita de Pandawa",
     "difficulty": 3,
     "description": "Pandawa usa bebidas fermentadas de las que saca fuerza y filosofía.\nLos pandawas son guerreros porteadores que pueden hacer locuras con sus cuerpos. Incluso podrán hacer locuras con el cuerpo de otros...",
     "categories": ["Posicionamiento", "Tanque", "Curas"],
     "builds":[{
-        "type": "Tanque/Curas/Posicionamiento",
+        "type": "Tanque/Posicionamiento",
         "description": "Esta build consiste en blablablabla, blablabla",
         "buildList":[{
             "name": "Nivel 20 (Dificil)",
@@ -351,6 +394,7 @@
     "IllustUrl": "",
     "classIconUrl": "",
     "id": 18,
+    "name": "Tymador",
     "title": "El Tymador",
     "difficulty": 3,
     "description": "Inteligentes y pacientes a la vez, los tymadores no se meten en el centro de la pelea como los yopukas, sino que preparan con ingenio sus trampas de bombas para causar estragos.\nTampoco dudan en usar su pistola o huir cuando la situación se vuelve demasiado complicada.",

@@ -19,10 +19,10 @@
         <div id="container">
             <div class="area" id="characterPortraits">
                 <div>
-                    <button onclick="changeGender('male')">
+                    <button id="maleBtn" onclick="changeGender('male')">
                         MALE
                     </button>
-                    <button onclick="changeGender('female')">
+                    <button id="femaleBtn" onclick="changeGender('female')">
                         FEMALE
                     </button>
                 </div>
@@ -88,9 +88,9 @@
                         <p id="typeOfBuild">Tipo de Build: "Tanque"</p>
                     </div>
                     <div id="buildsSection2">
-                        <button class="buildBtn" id="viewBuildsBtn">Ver Builds</button>
-                        <button class="buildBtn" id="viewDescBtn">Descripcion</button>
-                        <button class="buildBtn" id="changeBuildBtn">Cambiar Build</button>
+                        <button class="buildBtn" id="viewBuildsBtn" onclick="viewBuilds()">Ver Builds</button>
+                        <button class="buildBtn" id="viewDescBtn" onclick="viewDescription()">Descripcion</button>
+                        <button class="buildBtn" id="changeBuildBtn" onclick="changeBuild()">Cambiar Build</button>
                     </div>
                     <div id="buildsTable">
                     </div>

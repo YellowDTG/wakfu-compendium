@@ -23,3 +23,15 @@
 #imgDisabled{
     opacity: 0.55;
 }
+
+.flippyButton{
+    animation-name: FlipX;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes FlipX{
+    from {transform: rotate(0deg)}
+    to {-webkit-transform: rotateY(360deg)}
+}

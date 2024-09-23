@@ -90,17 +90,20 @@
     display: flex;
     flex-direction: row;
     height: 10%;
-
 }
 #buildTitle{
     text-align: left;
-    width: 50%;
+    width: 35%;
+    height: 100%;
     padding-left: 10px;
+    background-color: aliceblue;
 }
 #typeOfBuild{
     text-align: right;
-    width: 50%;
+    width: 65%;
+    height: 100%;
     padding-right: 10px;
+    background-color: pink;
 }
 /* SECTION 2 */
 #buildsSection2{

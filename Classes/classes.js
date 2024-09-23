@@ -3,6 +3,8 @@
 const characterPortraits = document.querySelectorAll("#characterPortraits img");
 const characterIllust = document.getElementById("characterIllust");
 const characterBG = document.getElementById("characterBG");
+const maleBtn = document.getElementById("maleBtn");
+const femaleBtn = document.getElementById("femaleBtn");
 
 let characters = [];
 //Title Section
@@ -20,12 +22,18 @@ const classCategoryTexts = document.querySelectorAll("#classCategories p");
 //Builds Section
 const classBuildsSection = document.getElementById("classBuildsSection");
 const buildsTable = document.getElementById("buildsTable");
+const buildTitleTxt = document.getElementById("buildTitle");
+const typeOfBuildTxt = document.getElementById("typeOfBuild");
+
+let currentBuildList = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
 //Runtime variables
 const genders = ["male", "female"];
 
 let counter = 0;
+let previousGender = 0;
 let currentGender = 0;
+let canChangeGender = true;
 let previousPortraitId = null;
 let portraitId = 0;
 
@@ -53,17 +61,93 @@ function updatePortraitDisplay(){
     }
 }
 function changeGender(newGender){
-    const tempGender = genders.indexOf(newGender);
+    switch (canChangeGender){
+        case true:
+            const tempGender = genders.indexOf(newGender);
+            if (tempGender >= 0 && tempGender < 2){
+                currentGender = tempGender;
 
-    if (tempGender >= 0 && tempGender < 2){
-        currentGender = tempGender;
-        displayClass(false);
-        updatePortraitDisplay();
+                if (previousGender != currentGender){
+                    previousGender = currentGender;
+                    playPortraitAnimation();
+                }
+                else{
+                    console.log("LMAO????");
+                }
+            }
+            else{
+                console.error(`${newGender} is not a gender in the index`);
+            }
+            break;
+        default:
+            console.log("can0t change gender now.");
+            break;
     }
-    else{
-        console.error(`${newGender} is not a gender in the index`);
+
+}
+
+function playPortraitAnimation(newGender){
+    let i = 0;
+    let changedDisplay = false;
+    enableGenderSelection(false);
+
+    myLoop();
+
+    function myLoop(){
+        let element = characterPortraits[i];
+
+        if (element.classList.contains("flippyButton")){
+            element.classList.remove("flippyButton");
+        }
+
+        setTimeout(function() {
+            element.classList.add("flippyButton"),30;
+            setTimeout(function(element2, i2) {
+                element2.src = `characterPortraits/${i2 + 1}${genders[currentGender]}.png`
+            },250, element, i);
+    
+            i++
+
+            if (i > characterPortraits.length / 2 + 1 && !changedDisplay){
+                changedDisplay = true;
+                displayClass(false);
+            }
+
+            if (i < characterPortraits.length){
+                myLoop();
+                return;
+            }
+            else{
+                setTimeout(() => enableGenderSelection(true), 500);
+            }
+        }, 110);
+    }
+
+
+    characterPortraits.forEach(function(element){
+        console.log(element);
+        
+    });
+}
+
+function enableGenderSelection(isEnabled){
+    canChangeGender = isEnabled;
+
+    switch(isEnabled){
+        case true:
+                maleBtn.removeAttribute("disabled");
+                femaleBtn.removeAttribute("disabled");
+            break;
+            case false:
+                maleBtn.setAttribute("disabled", true);
+                femaleBtn.setAttribute("disabled", true);
+            break;
+        default:
+            console.error("only booleans allowed here pal.");
+            break;
     }
 }
+  
 
 //CENTER DISPLAY
 function displayClass(playAnimation){
@@ -155,9 +239,30 @@ function displayClassInfo(){
     // }
     // counter++;
 
+    updateBuilds();
+}
+
+function updateBuilds(){
+    const currentCharacter = characters[portraitId];
+
+    try{
+        buildTitleTxt.textContent = `Builds ${currentCharacter.name}`;
+    }
+    catch(error){
+        console.log(error);
+        buildTitleTxt.textContent = `Clase no definida:`;
+    }
+
     try{
         buildsTable.innerHTML = "";
-        let currentBuild = currentCharacter.builds[0];
+        let currentBuild = currentCharacter.builds[currentBuildList[portraitId]];
+
+        if (currentBuild.type){
+            typeOfBuildTxt.textContent = `Build: ${currentBuild.type}`;
+        }
+
+        console.log(currentBuild.type);
+
         for (let i = 0; i < currentBuild.buildList.length; i++){
             console.log(currentBuild.buildList[i].name);
 
@@ -201,8 +306,34 @@ function displayClassInfo(){
     catch(error){
         console.log(error);
         buildsTable.innerHTML += '<p style="text-align: center"><b>NO HAY BUILDS PARA ESTA CLASE TODAVÍA, CONTACTA AL DUEÑO POR DISCORD O ACHANTA Y ESPERA. skill issues</b></p>';
+        typeOfBuildTxt.textContent = `Build: No disponible (aún)`;
     }
 
+}
+
+// Builds Section BUTTONS
+function viewBuilds(){
+
+}
+function viewDescription(){
+
+}
+function changeBuild(){
+
+    if (characters[portraitId].builds.length > 1){
+        currentBuildList[portraitId]++;
+
+        if (currentBuildList[portraitId] >= characters[portraitId].builds.length){
+            currentBuildList[portraitId] = 0;
+        }
+
+        updateBuilds();
+
+        console.log(currentBuildList[portraitId]);
+    }
+    else{
+
+    }
 }
 
 //CLASS METHODS
