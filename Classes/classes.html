@@ -13,11 +13,18 @@
 </head>
 <body>
     <header>
-        <h3>Elige tu clase</h3>
+        <a  href="../index.html">
+            <button id="returnBtn">
+                X
+            </button>
+        </a>
     </header>
     <main>
         <div id="container">
-            <div class="area" id="characterPortraits">
+            <div class="area boxBorder" id="characterPortraits">
+                <div style="width: 100%;">
+                    <h3>Elige tu clase</h3>
+                </div>
                 <div>
                     <button id="maleBtn" onclick="changeGender('male')">
                         MALE
@@ -52,7 +59,7 @@
                 <img id="characterBG" src="characterBackgrounds/10bg.png">
             </div>
             <div class="area" id="characterInfo">
-                <div id="classTitleSection" style="display: none;">
+                <div id="classTitleSection" class="boxBorder" style="display: none;">
                     <img id="classIcon" src="characterPortraits/aleat.png">
                     <div id="classTitle">
                         <p id="justTitle">Class Title</p>
@@ -63,8 +70,8 @@
                     </div>
                 </div>
                 <!-- ------ CLASS INFORMATION SECTION ----- -->
-                <div id="classInfoSection" style="display: none;">
-                    <p id="classDescription">PROBANDO PROBANDO</p>
+                <div id="classInfoSection" class="boxBorder" style="display: none;">
+                    <p id="classDescription" style="white-space: pre-line">PROBANDO PROBANDO</p>
                     <div id="classCategories">
                         <div>
                             <img id="categoryImg" src="characterPortraits/aleat.png">
@@ -82,11 +89,12 @@
                 </div>
 
                 <!-- ------- BUILDS SECTION ------- -->
-                <div id="classBuildsSection" style="display: none;">
+                <div id="classBuildsSection" class="boxBorder" style="display: none;">
                     <div id="buildsSection1">
                         <p id="buildTitle">Builds Sacrógrito</p>
                         <p id="typeOfBuild">Tipo de Build: "Tanque"</p>
                     </div>
+                    <hr>
                     <div id="buildsSection2">
                         <button class="buildBtn" id="viewBuildsBtn" onclick="viewBuilds()">Ver Builds</button>
                         <button class="buildBtn" id="viewDescBtn" onclick="viewDescription()">Descripcion</button>
@@ -94,8 +102,8 @@
                     </div>
                     <div id="buildsTable">
                     </div>
-                    <div id="buildDescription" style="display: none;">
-                        <p>Whole as Description</p>
+                    <div id="buildDescriptionSection" style="display: none; white-space: pre-line">
+                        <p id="buildDescription">Whole as Description</p>
                     </div>
                 </div>
             </div>

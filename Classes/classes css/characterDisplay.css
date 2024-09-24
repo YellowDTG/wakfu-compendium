@@ -1,6 +1,10 @@
 /* CHARACTER DISPLAY CSS */
 #characterIllustration{
     width: 40vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 #characterIllust{
     opacity: 0;

@@ -1,7 +1,7 @@
 /* CHARACTER SELECTION CSS */
 #characterPortraits{
     width: 260px;
-    height: auto;
+    height: 80%;
     
     display: flex;
     flex-wrap: wrap;

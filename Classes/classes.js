@@ -21,9 +21,11 @@ const classCategoryTexts = document.querySelectorAll("#classCategories p");
 
 //Builds Section
 const classBuildsSection = document.getElementById("classBuildsSection");
-const buildsTable = document.getElementById("buildsTable");
 const buildTitleTxt = document.getElementById("buildTitle");
 const typeOfBuildTxt = document.getElementById("typeOfBuild");
+const buildsTable = document.getElementById("buildsTable");
+const buildDescriptionSection = document.getElementById("buildDescriptionSection");
+const buildDescription = document.getElementById("buildDescription");
 
 let currentBuildList = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 
@@ -86,7 +88,7 @@ function changeGender(newGender){
 
 }
 
-function playPortraitAnimation(newGender){
+function playPortraitAnimation(){
     let i = 0;
     let changedDisplay = false;
     enableGenderSelection(false);
@@ -172,8 +174,11 @@ function displayClassInfo(){
     const currentCharacter = characters[portraitId];
     if (previousPortraitId == null){
         classTitleSection.style.display = "flex";
+        classTitleSection.classList.add("fadeIn");
         classInfoSection.style.display = "flex";
+        classInfoSection.classList.add("fadeIn");
         classBuildsSection.style.display = "flex";
+        classBuildsSection.classList.add("fadeIn");
     }
     //TITLE SECTION
     classIcon.src = `classIcons/${portraitId + 1}ci.png`;
@@ -244,7 +249,7 @@ function displayClassInfo(){
 
 function updateBuilds(){
     const currentCharacter = characters[portraitId];
-
+    
     try{
         buildTitleTxt.textContent = `Builds ${currentCharacter.name}`;
     }
@@ -252,7 +257,16 @@ function updateBuilds(){
         console.log(error);
         buildTitleTxt.textContent = `Clase no definida:`;
     }
-
+    
+    
+    try{
+        buildDescription.textContent = currentCharacter.builds[currentBuildList[portraitId]].description;
+    }
+    catch(error){
+        console.log(error);
+        buildDescription.textContent = `Esta clase no tiene builds por el momento.`;
+    }
+    
     try{
         buildsTable.innerHTML = "";
         let currentBuild = currentCharacter.builds[currentBuildList[portraitId]];
@@ -313,10 +327,12 @@ function updateBuilds(){
 
 // Builds Section BUTTONS
 function viewBuilds(){
-
+    buildDescriptionSection.style.display = "none";
+    buildsTable.style.display = "grid";
 }
 function viewDescription(){
-
+    buildsTable.style.display = "none";
+    buildDescriptionSection.style.display = "block";
 }
 function changeBuild(){
 

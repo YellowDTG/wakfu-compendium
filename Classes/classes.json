@@ -211,7 +211,7 @@
     },
     {
         "type": "Daños/Melé",
-        "description": "Esta build consiste en blablablabla, blablabla",
+        "description": "Con esta build usaremos al Aniripsa a Melé constantemente con ataques en area.\nPara esta build es necesario que el aniripsa tenga mucha resistencia elemental y algo de parapeto en sus estadisticas.",
         "buildList":[{
             "name": "Nivel 20 (Dificil)",
             "url": "https://zenithwakfu.com/builder/50bc9",
