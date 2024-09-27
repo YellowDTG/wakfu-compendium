@@ -211,7 +211,7 @@
     },
     {
         "type": "Daños/Melé",
-        "description": "Con esta build usaremos al Aniripsa a Melé constantemente con ataques en area.\nPara esta build es necesario que el aniripsa tenga mucha resistencia elemental y algo de parapeto en sus estadisticas.",
+        "description": "Con esta build usaremos al Aniripsa a Melé constantemente con ataques en area.\nPara esta build es necesario que el aniripsa tenga mucha resistencia elemental y algo de parapeto en sus estadisticas",
         "buildList":[{
             "name": "Nivel 20 (Dificil)",
             "url": "https://zenithwakfu.com/builder/50bc9",
@@ -342,6 +342,24 @@
             "url": "https://zenithwakfu.com/builder/e7262",
             "difficulty": 2,
             "img": "characterPortraits/aleat.png"
+        },
+        {
+            "name": "Nivel 50 (Dificil)",
+            "url": "https://zenithwakfu.com/builder/74b8e",
+            "difficulty": 3,
+            "img": "characterPortraits/aleat.png"
+        },
+        {
+            "name": "Nivel 65 (Normal)",
+            "url": "https://zenithwakfu.com/builder/ddadc",
+            "difficulty": 2,
+            "img": "characterPortraits/aleat.png"
+        },
+        {
+            "name": "Nivel 80 (Imposible)",
+            "url": "https://zenithwakfu.com/builder/e9c4c",
+            "difficulty": 5,
+            "img": "characterPortraits/aleat.png"
         }]
     }]
 },
@@ -398,5 +416,27 @@
     "title": "El Tymador",
     "difficulty": 3,
     "description": "Inteligentes y pacientes a la vez, los tymadores no se meten en el centro de la pelea como los yopukas, sino que preparan con ingenio sus trampas de bombas para causar estragos.\nTampoco dudan en usar su pistola o huir cuando la situación se vuelve demasiado complicada.",
-    "categories": ["Especialidad", "Daños", "Control"]
+    "categories": ["Especialidad", "Daños", "Control"],
+    "builds":[{
+        "type": "Daños",
+        "description": "Esta build consiste en blablablabla, blablabla",
+        "buildList":[{
+            "name": "Nivel 20 (Dificil)",
+            "url": "https://zenithwakfu.com/builder/073a1",
+            "difficulty": 3,
+            "img": "characterPortraits/aleat.png"
+        },
+        {
+            "name": "Nivel 35 (Normal)",
+            "url": "https://zenithwakfu.com/builder/fad11",
+            "difficulty": 2,
+            "img": "characterPortraits/aleat.png"
+        },
+        {
+            "name": "Nivel 50 (Muy Dificil)",
+            "url": "https://zenithwakfu.com/builder/e13ce",
+            "difficulty": 4,
+            "img": "characterPortraits/aleat.png"
+        }]
+    }]
 }]
