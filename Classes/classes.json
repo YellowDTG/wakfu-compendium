@@ -46,15 +46,27 @@
             "img": "characterPortraits/aleat.png"
         },
         {
-            "name": "Nivel 50 (Dificil)",
+            "name": "Nivel 50 (Normal)",
             "url": "https://zenithwakfu.com/builder/b000d",
-            "difficulty": 3,
+            "difficulty": 2,
+            "img": "characterPortraits/aleat.png"
+        },
+        {
+            "name": "Nivel 65 (Facil)",
+            "url": "https://zenithwakfu.com/builder/b8f65",
+            "difficulty": 1,
             "img": "characterPortraits/aleat.png"
         },
         {
             "name": "Nivel 65 (Normal)",
-            "url": "https://zenithwakfu.com/builder/b8f65",
+            "url": "https://zenithwakfu.com/builder/4ee58",
             "difficulty": 2,
+            "img": "characterPortraits/aleat.png"
+        },
+        {
+            "name": "Nivel 65 (Dificil)",
+            "url": "https://zenithwakfu.com/builder/af4f0",
+            "difficulty": 3,
             "img": "characterPortraits/aleat.png"
         }]
     }]
@@ -68,7 +80,35 @@
     "title": "El Zobal",
     "difficulty": 1,
     "description": "Los zobals son guerreros lunáticos que se adaptan a todo tipo de situaciones. A veces temerosos, otras psicópatas y, a menudo, simplemente zobals: sus capacidades en combate cambian según la máscara que se pongan.",
-    "categories": ["Posicionamiento", "Curas", "Daños"]
+    "categories": ["Posicionamiento", "Curas", "Daños"],
+    "builds":[{
+        "type": "Daños/Espalda",
+        "description": "Esta build consiste en blablablabla, blablabla",
+        "buildList":[{
+            "name": "Nivel 20 (Normal)",
+            "url": "https://zenithwakfu.com/builder/0611d",
+            "difficulty": 2,
+            "img": "characterPortraits/aleat.png"
+        },
+        {
+            "name": "Nivel 35 (Facil)",
+            "url": "https://zenithwakfu.com/builder/5ce6a",
+            "difficulty": 1,
+            "img": "characterPortraits/aleat.png"
+        },
+        {
+            "name": "Nivel 50 (Dificil)",
+            "url": "https://zenithwakfu.com/builder/4a7fa",
+            "difficulty": 3,
+            "img": "characterPortraits/aleat.png"
+        },
+        {
+            "name": "Nivel 65 (Facil)",
+            "url": "https://zenithwakfu.com/builder/cbc0c",
+            "difficulty": 1,
+            "img": "characterPortraits/aleat.png"
+        }]
+    }]
 },
 {
     "portraitUrl": "",
@@ -96,21 +136,27 @@
             "img": "characterPortraits/aleat.png"
         },
         {
-            "name": "Nivel 50 (Dificil)",
-            "url": "https://zenithwakfu.com/builder/4a7fa",
-            "difficulty": 3,
+            "name": "Nivel 50 (Normal)",
+            "url": "https://zenithwakfu.com/builder/cbc0c",
+            "difficulty": 2,
             "img": "characterPortraits/aleat.png"
         },
         {
-            "name": "Nivel 50 v2 (Dificil)",
-            "url": "https://zenithwakfu.com/builder/cbc0c",
-            "difficulty": 3,
+            "name": "Nivel 65 (Facil)",
+            "url": "https://zenithwakfu.com/builder/46c6d",
+            "difficulty": 1,
             "img": "characterPortraits/aleat.png"
         },
         {
             "name": "Nivel 65 (Normal)",
-            "url": "https://zenithwakfu.com/builder/46c6d",
+            "url": "https://zenithwakfu.com/builder/cda71",
             "difficulty": 2,
+            "img": "characterPortraits/aleat.png"
+        },
+        {
+            "name": "Nivel 65 (Dificil)",
+            "url": "https://zenithwakfu.com/builder/05888",
+            "difficulty": 3,
             "img": "characterPortraits/aleat.png"
         }]
     }]
@@ -197,15 +243,39 @@
             "img": "characterPortraits/aleat.png"
         },
         {
-            "name": "Nivel 65 (Normal)",
+            "name": "Nivel 65 (Facil)",
             "url": "https://zenithwakfu.com/builder/cf0b9",
+            "difficulty": 1,
+            "img": "characterPortraits/aleat.png"
+        },
+        {
+            "name": "Nivel 65 (Normal)",
+            "url": "https://zenithwakfu.com/builder/3d442",
             "difficulty": 2,
             "img": "characterPortraits/aleat.png"
         },
         {
-            "name": "Nivel 80 (Imposible)",
-            "url": "https://zenithwakfu.com/builder/c3772",
-            "difficulty": 4,
+            "name": "Nivel 65 (Dificil)",
+            "url": "https://zenithwakfu.com/builder/13045",
+            "difficulty": 3,
+            "img": "characterPortraits/aleat.png"
+        },
+        {
+            "name": "Nivel 80 (Facil)",
+            "url": "https://zenithwakfu.com/builder/1c756",
+            "difficulty": 1,
+            "img": "characterPortraits/aleat.png"
+        },
+        {
+            "name": "Nivel 80 (Normal)",
+            "url": "https://zenithwakfu.com/builder/961ed",
+            "difficulty": 2,
+            "img": "characterPortraits/aleat.png"
+        },
+        {
+            "name": "Nivel 80 (Dificil)",
+            "url": "https://zenithwakfu.com/builder/5fe43",
+            "difficulty": 3,
             "img": "characterPortraits/aleat.png"
         }]
     },
@@ -247,6 +317,24 @@
         "buildList":[{
             "name": "Nivel 20 (Dificil)",
             "url": "https://zenithwakfu.com/builder/96c6f",
+            "difficulty": 3,
+            "img": "characterPortraits/aleat.png"
+        },
+        {
+            "name": "Nivel 35 (Facil)",
+            "url": "https://zenithwakfu.com/builder/f59af",
+            "difficulty": 1,
+            "img": "characterPortraits/aleat.png"
+        },
+        {
+            "name": "Nivel 50 (Dificil)",
+            "url": "https://zenithwakfu.com/builder/feab1",
+            "difficulty": 3,
+            "img": "characterPortraits/aleat.png"
+        },
+        {
+            "name": "Nivel 65 (Dificil)",
+            "url": "https://zenithwakfu.com/builder/b24bc",
             "difficulty": 3,
             "img": "characterPortraits/aleat.png"
         }]
@@ -394,14 +482,32 @@
             "img": "characterPortraits/aleat.png"
         },
         {
-            "name": "Nivel 35 (Normal)",
+            "name": "Nivel 35 (Facil)",
             "url": "https://zenithwakfu.com/builder/c4dbb",
+            "difficulty": 1,
+            "img": "characterPortraits/aleat.png"
+        },
+        {
+            "name": "Nivel 50 (Normal)",
+            "url": "https://zenithwakfu.com/builder/4cbaf",
             "difficulty": 2,
             "img": "characterPortraits/aleat.png"
         },
         {
-            "name": "Nivel 50 (Dificil)",
-            "url": "https://zenithwakfu.com/builder/4cbaf",
+            "name": "Nivel 65 (Facil)",
+            "url": "https://zenithwakfu.com/builder/caff9",
+            "difficulty": 1,
+            "img": "characterPortraits/aleat.png"
+        },
+        {
+            "name": "Nivel 65 (Normal)",
+            "url": "https://zenithwakfu.com/builder/fbb3a",
+            "difficulty": 2,
+            "img": "characterPortraits/aleat.png"
+        },
+        {
+            "name": "Nivel 65 (Dificil)",
+            "url": "https://zenithwakfu.com/builder/571dc",
             "difficulty": 3,
             "img": "characterPortraits/aleat.png"
         }]
